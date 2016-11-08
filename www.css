@@ -1,0 +1,1687 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
+
+/* default html tags */
+*  
+{
+	padding: 0; 
+	margin: 0;
+	border: none;
+}
+body 
+{
+	background: #000000;
+	font-family: 'Arimo';
+	font-size: 14px;
+	color: #fff;
+}
+a {color:#FFFFFF;text-decoration:underline}
+a:hover {color:#FFFFFF;}
+
+h2 {margin:10px 0}
+
+u {color:#FFF}
+
+/* main page elements */
+#pagewrapper { }
+
+#page {background: url("/images/framework/buzz-slots-site-main-bg_basic.jpg") no-repeat scroll center 0 rgba(0, 0, 0, 0);}
+body.body2 #page, body.body1 #page, body.body0 #page {background: url("/images/framework/buzz-slots-site-main-bg-blank.jpg") no-repeat scroll center 0 rgba(0, 0, 0, 0);}
+
+#headerwrapper 
+{
+	clear: both;
+	background: url('/images/framework/headerBg.png') no-repeat top center #00c9d8;
+	box-shadow: #00484d 0 1px 0;
+	border-bottom: 1px solid #66dfe8;
+}
+#header 
+{
+	width: 935px;
+	height: 160px;
+	margin: 0 auto;
+	padding: 20px 0 5px;
+	position: relative;
+}
+#navwrapper 
+{
+	clear: both;
+	position:relative;
+	top:-40px;
+}
+#nav 
+{
+	width: 935px;
+	margin: 0 auto;
+}
+#contentwrapper 
+{
+	clear: both;
+	min-height: 500px;
+	padding: 0 0 0 0;
+}
+#content 
+{
+	width: 935px;
+	min-height: 500px;
+	margin: 0 auto;
+	/*padding: 10px;*/
+}
+#footerwrapper 
+{
+	clear: both;
+}
+#footer 
+{
+	width: 935px;
+	margin: 0 auto;
+	/*background: #111111;*/
+}
+
+/* HEADER */
+#header #PluginLogin2 
+{
+	float: right;
+	color: #fefefe;
+	padding: 5px 10px;
+}
+#header #PluginLogin2 span, #header #PluginLogin2 a
+{
+	float:left;
+	padding: 10px 0 10px 0;
+	height:18px;
+}
+#header #PluginLogin2 br {display:none;}
+
+#header #PluginLogin2 #PluginLogin2Balance
+{
+	padding-right:20px;
+	height:18px;
+	font-weight: 700;
+}
+#header #PluginLogin2 #PluginLogin2Logout
+{
+	margin-left:10px;
+        margin-right: -10px;
+}
+#header #PluginLogin2 span.userCurrency, #header #PluginLogin2 span.userBalance
+{
+	padding:0;
+}
+#header #PluginLogin2 span.userCurrency {
+	padding-right: 5px;
+}
+#PluginLogin2HelloLabel, #PluginLogin2HelloUsername, #PluginLogin2BalanceLabel, #PluginLogin2Balance, #PluginLogin2RefreshAnchor {
+	background: url('/images/framework/loggedInHeader.png') repeat;
+}
+#header #PluginLogin2 #PluginLogin2HelloLabel
+{
+	padding-left: 20px;
+	padding-right: 5px;
+}
+#header #PluginLogin2 #PluginLogin2HelloUsername
+{
+	padding-right: 40px;
+	font-weight: 700;
+}
+#header #PluginLogin2 #PluginLogin2RefreshAnchor
+{
+	padding-right: 20px;
+	height: 18px;
+}
+#header #PluginLogin2 #PluginLogin2BalanceLabel 
+{
+	padding-right:5px;
+}
+#header #PluginLogin2 #PluginLogin2RefreshAnchor img
+{
+	position: relative;
+	top:-4px;
+}
+#header #PluginLogin2 #loginBtn {
+	text-decoration: none;
+	font-size: 14px;
+	color: #00484d;
+	text-transform: uppercase;
+	line-height: 28px;
+	padding: 0;
+	font-family: 'Arimo', sans-serif;
+	font-weight:700;
+}
+#header #PluginLogin2 #loginBtn:hover {
+	color:#FFFFFF;
+}
+#loginPopup input[type="text"], #loginPopup input[type="password"], #loginPopupForgotPassword input[type="text"]
+{
+	width: 275px;
+	height: 40px;
+	border: 1px solid #bbbbbb;
+	background-color: #efefef;
+	margin-top: 10px;
+	font-size: 16px;
+	color: #3f3f3f;
+	padding-left: 15px;
+}
+#loginPopup input[type="text"].defaultTextActive, #loginPopup input[type="password"].defaultTextActive, #loginPopupForgotPassword input[type="text"].defaultTextActive
+{ 
+	color: #999999;
+}
+#loginPopup .submitBtn, #loginPopupForgotPassword .submitBtn
+{
+	margin-top: 5px;
+}
+
+#header .submitBtn {
+	float:right;
+}
+#header td:last-child {
+	width: 600px;
+}
+#header .PluginLanguageSelector { /*float:right;*/ width: 244px; position: absolute; right: -10px; top: 10px; }
+#header .PluginLanguageSelector table { border-spacing: 0; padding: 0 7px;}
+#header .PluginLanguageSelector td {padding: 0 3px 5px 3px;}
+#header .PluginLanguageSelector td input {width:40px;height:20px}
+/*#header .PluginLanguageSelector td .default {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'></feColorMatrix></filter></svg>#grayscale"); 
+	filter: gray; 
+	-webkit-filter: grayscale(100%); 
+}
+#header .PluginLanguageSelector td .selected, #header .PluginLanguageSelector td .default:hover {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'></feColorMatrix></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+}*/
+
+/* NAVIGATION */
+#navigation-topmenu, #navigation-submenu
+{
+	height: 30px;
+	line-height: 30px;
+	list-style: none;
+	text-align:center;
+}
+#navigation-submenu
+{
+	line-height: 53px;
+	text-align:left;
+	height:53px;
+	background: #000000;
+	height:14px;
+	position:relative;
+	z-index:10
+}
+#navigation-topmenu li, #navigation-submenu li
+{
+	/*float: left;*/
+	display:inline;
+}
+#navigation-topmenu li a, #navigation-submenu li a
+{
+	padding: 13px 30px;
+	color: #00484d;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height:22px
+	font-weight:bold;
+	font-family: 'Arial';
+	/*font-family: 'Arimo', sans-serif;*/
+}
+#navigation-topmenu li a
+{
+	color: #00484d;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+}
+#navigation-submenu li a
+{
+	/*color: #333333;*/
+	color: #999999;
+	font-size:14px;
+	line-height:14px;
+	padding: 20px 15px;
+}
+#navigation-topmenu li a:hover
+{
+	color: #fff;
+	background: #00484d;
+}
+#navigation-submenu li a:hover, #navigation-submenu li .current
+{
+	background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #fff;
+}
+#navigation-topmenu li .current
+{
+	background: #00484D;
+}
+#navigation-topmenu li.current a, #navigation-submenu li.current a
+{
+	color: #fff;
+}
+#navigation-topmenu #languageSelector 
+{
+	float: right;
+	padding-right: 1px;
+	display:none;
+}
+
+#navigation-presubmenu
+{
+	padding-top: 42px;
+}
+
+#navigation-postsubmenu 
+{
+	background: none repeat scroll 0 0 #000;
+    height: 41px;
+    position: absolute;
+    width: 935px;
+    z-index: 1;
+}
+
+/* FOOTER */
+#footerinfo
+{
+	width: 100%;
+	font-family: 'Arimo', sans-serif;
+	font-size:14px;
+	color: #d2d2d2;
+}
+#footerinfo .left
+{
+	width:50%;
+	float: left;
+}
+#footerinfo .right
+{
+	width: 50%;
+	float:right;
+}
+#footerinfo .left p 
+{
+	padding: 0 15px 0 0;
+}
+#footerinfo .right p
+{
+	padding: 0 0 0 15px;
+}
+#footerinfo .last 
+{
+	text-align: center;
+}
+#footerlinks
+{
+	font-family: 'Arimo', sans-serif;
+	font-size:14px;
+	color: #d2d2d2;
+	text-align:center;
+}
+#footerlinks ul 
+{
+	list-style: none outside none;
+    text-align: center;
+}
+#footerlinks li 
+{
+	display:inline;
+}
+#footerinfo p, #footerlinks p
+{
+	padding-bottom: 10px;
+}
+#footerlinks a 
+{
+	color: #e5e5e5;
+}
+
+/* PLUGIN SPECIFIC STUFF */
+#PluginListCasinoGames3GameList
+{
+	min-height: 516px;
+}
+#PluginListCasinoGames3GameList h1
+{
+	font-family: 'Arimo', sans-serif;
+	font-size:24px;
+	font-weight:700;
+	text-transform:uppercase;
+	margin: 0 0 15px 15px;
+}
+#PluginListCasinoGames3GameList iframe
+{
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
+	background:#00484d;
+	margin-bottom:30px;
+}
+#PluginListCasinoGames3 
+{
+	background: url('/images/framework/transparent-bg.png');
+	padding: 30px 31px 0;
+	margin: 0px 0 140px 0;
+}
+#PluginListCasinoGames3.custom {
+	margin: 0px 0 30px 0;
+}
+#PluginListCasinoGames3Paging
+{
+	left: -31px;
+    position: relative;
+    vertical-align: middle;
+    width: 935px;
+	background: #00c9d8;
+	height:65px;
+	border-radius: 3px;
+	border-top: #62dde7;
+}
+#PluginListCasinoGames3Paging td:nth-child(1), #PluginListCasinoGames3Paging td:nth-child(3) {width:0}
+#PluginListCasinoGames3Paging td:nth-child(2) {width:100%}
+#PluginListCasinoGames3Paging .showmore
+{
+	font-size: 24px;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:65px;
+	color:#00484d;
+	font-weight:700;
+	cursor:pointer;
+}
+#PluginListCasinoGames3Paging #ListCasinoGames3PrevBtn
+{
+	padding-right: 35px;
+	float: left;
+}
+#PluginListCasinoGames3Paging  #ListCasinoGames3NextBtn
+{
+	float: left;
+	padding-left: 35px;
+}
+#PluginListCasinoGames3Paging .pagingButtons
+{
+	height: 32px;
+	display:table-cell;
+}
+#PluginListCasinoGames3Paging .pagingSummary
+{
+	display:none;
+}
+#PluginListCasinoGames3Paging #pagingPages span
+{
+	background: none repeat scroll 0 0 #00484d;
+	color: #ffffff;
+    border-radius: 18px;
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+	margin: 0 5px;
+}
+#PluginListCasinoGames3Paging #pagingPages span.current, #PluginListCasinoGames3Paging #pagingPages span:hover
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+	color: #00484d;
+}
+#PluginListCasinoGames3Paging #pagingPages span a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+	display:block;
+	height:35px;
+	width:35px;
+}
+#PluginListCasinoGames3Paging #pagingPages span.current a, #PluginListCasinoGames3Paging #pagingPages span a:hover
+{
+	color: inherit;
+}
+#PluginListCasinoGames3Paging .pagingSearch, #homeSearch .pagingSearch
+{
+	height: 40px;
+	float:left;
+    left: 0;
+    margin: 0 auto;
+	padding: 20px 0;
+    position: absolute;
+    text-align: center;
+    top: 95px;
+    width: 935px;
+	background: url('/images/framework/transparent-bg.png');
+}
+#PluginListCasinoGames3Paging #ListCasinoGames3SearchText, #homeSearch #ListCasinoGames3SearchText
+{
+	width: 317px;
+	height: 20px;
+	background-color: #FFFFFF;
+	color: #000000;
+	margin:0px 10px;
+	padding:10px;
+}
+#PluginListCasinoGames3Paging #ListCasinoGames3SearchButton, #homeSearch #ListCasinoGames3SearchButton
+{
+	width: 98px;
+	height: 40px;
+	background: url('/images/misc/search_btn.png') no-repeat;
+	position:absolute;
+	cursor:pointer;
+}
+.casinoGameList 
+{
+	list-style: none;
+}
+.casinoGameList li
+{ 
+	float: left; 
+}
+.casinoGameImage
+{
+	width: 188px;
+	height: 125px;
+	text-decoration: none;
+	position: absolute;
+	top: 6px;
+}
+.casinoGameWrapper
+{
+	width: 188px;
+	height: 168px;
+	display: block;
+	position: relative; 
+	z-index: 1!important;
+	margin: 0 15px 30px 15px;
+}
+.casinoGameOverlay
+{
+	height: 125px;
+	width: 188px;
+	position: absolute;
+	top: 6px;
+	/*background: url('/images/casino/_playnow.png') top left no-repeat;*/
+	z-index: 2;
+	display: none;
+}
+.casinoGameOverlayPlay
+{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	width: 50%;
+	margin-top: 40px;
+	color: #00484d;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Arimo', sans-serif;
+	background-color:#00c9d8;
+	border-radius:3px;
+	padding:10px 20px;
+	border-top: 1px solid #73e1ea;
+	text-transform:uppercase;
+}
+.casinoGameLink {
+	text-decoration: none;
+}
+.casinoGameCaption
+{
+	display: block;
+	width: 168px;
+	color: #000000;
+	font-size: 14px;
+	font-family:'Arimo',sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+	background: #00c9d8;
+	position: absolute;
+	bottom: 0px;
+	z-index: 3;
+	padding: 10px;
+	font-weight: bold;
+}
+.casinoGameHot
+{
+	display: block;
+	width: 53px;
+	height: 53px;
+	background: url('/images/casino/_hot.png') no-repeat;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	z-index: 4;
+}
+.casinoGameNew
+{
+	display: block;
+	width: 39px;
+	height: 48px;
+	background: url('/images/casino/ribbon_new.png') no-repeat;
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	z-index: 4;
+}
+.sv .casinoGameNew {background: url('/images/casino/ribbon_ny.png') no-repeat;}
+
+.casinoGameLink:hover .casinoGameOverlay
+{
+	display: block;
+}
+.casinoGameLink:hover .casinoGameCaption
+{
+	/*background: #6f6f6f;*/
+}
+
+.PluginDepositsList
+{
+	list-style-type: none;
+}
+.PluginDepositsList li
+{
+	display: block;
+	float: left;
+	padding: 5px;
+}
+
+.PluginWithdrawalsList
+{
+	list-style-type: none;
+}
+.PluginWithdrawalsList li
+{
+	display: block;
+	float: left;
+	padding: 5px;
+}
+
+.PluginListCasinoGames
+{
+	list-style-type: none;
+}
+.PluginListCasinoGames li
+{
+	display: block;
+	float: left;
+	padding: 0 18px 18px 0;
+}
+
+.casinoGameList 
+{
+  list-style: none;
+}
+
+.imagerotator1 {
+	width:935px;
+	overflow:hidden;
+	margin:0 0 30px 0;
+}
+
+
+/* BETTING */
+.PluginBetting { width: 100%; font-size: 11px; }
+.PluginBetting table { border-collapse: collapse; }
+.PluginBetting table th { height: 30px; background: #333333; color: #ffffff; text-align: center; text-transform: uppercase; }
+.PluginBetting table th a { color: #ffffff; text-decoration: none; }
+.PluginBetting ul { list-style-type: none; }
+.PluginBetting a {	color: #333333; text-decoration: none; }
+.PluginBetting .right { text-align: right; }
+.PluginBettingMainTable { width: 100%; background-color: #ffffff; }
+.PluginBettingTopColumn { float: none; padding-bottom: 30px; }
+.PluginBettingLeftColumn { width: 22%; vertical-align: top; padding-left: 30px; padding-bottom: 30px; }
+.PluginBettingCenterColumn { width: 56%; vertical-align: top; padding-left: 20px; padding-right: 20px; padding-bottom: 30px; }
+.PluginBettingRightColumn { width: 22%; vertical-align: top; padding-right: 30px; padding-bottom: 30px; }
+
+/* BETTING TOP NAVIGATION */
+#PluginBettingTopContent { height: 50px; background-color: #0488db; }
+.PluginBettingTopMenu  
+{
+	padding: 12px 0 0 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+.PluginBettingTopMenu li 
+{
+	display:inline;
+	border-left: 1px solid #1971a1;
+	padding: 0 8px 0 8px;
+}
+.PluginBettingTopMenu li a { color: #6ec8fc; text-decoration: none; }
+.PluginBettingTopMenu li.current a { color: #ffffff; text-decoration: none; }
+.PluginBettingTopMenu li:first-child { border-left: none; padding-left: 0; }
+
+/* BETTING MENU */
+.PluginBettingMenu { width: 100%; border-left: 1px solid #adadad; border-top: 1px solid #adadad; border-right: 1px solid #adadad; }
+.PluginBettingMenu td { 
+	width: 50%; 
+	text-align: center;
+	padding: 10px 0 10px 0;
+	background: #333333;
+	font-weight:bold;
+	text-transform: uppercase;
+}
+.PluginBettingMenu td a { color: #6ec8fc; }
+.PluginBettingMenu td.current a { color: #ffffff; }
+.PluginBettingMenu td.menuItemLeft { border-top: 1px solid #adadad; border-right: 1px solid #adadad; }
+.PluginBettingMenu td.menuItemRight { border-top: 1px solid #adadad; }
+
+.PluginBettingMenuTableHotLinks, .PluginBettingMenuTableSports { width: 100%; background: #ededed; border: solid 1px #adadad; }
+.PluginBettingMenuTableHotLinks td, .PluginBettingMenuTableSports td {
+	height: 30px;
+	border-bottom: 1px solid #adadad;
+	padding: 0 5px 0 5px;
+}
+.PluginBettingLeftColumn .currentsport, .PluginBettingLeftColumn .currentsport a { background: #0488db; color: #fff; }
+.PluginBettingLeftColumn .currentcategory { background: #b8b8b8; }
+.PluginBettingLeftColumn .competition { background: #d4d4d4; }
+.PluginBettingLeftColumn .category { background: #b8b8b8; }
+.PluginBettingLeftColumn .plus { width: 10px; }
+#PluginBettingLeftContentLiveNow { border: 1px solid #999;}
+.PluginBettingMenuLiveTable, .PluginBettingMenuLiveTableAlternate { width: 100%; background: #ededed; border-bottom: 1px solid #adadad; }
+.PluginBettingMenuLiveTable td a, .PluginBettingMenuLiveTableAlternate td a { color: #000; }
+.currentLiveEvent { background: orange; }
+.PluginBettingMenuLiveTable td, .PluginBettingMenuLiveTableAlternate td { padding: 0 5px 0 5px; color: #000; height: 20px; }
+.sportText { } /* display: none; to hide */
+
+/* BETTING CENTER COLUMN */
+.PluginBettingCenterColumn .PluginBettingActiveSettledBets 
+{
+	width: 100%;
+}
+
+.sportIcon { width: 16px; } /* display: none; to hide */
+.sportIcon div { background: url('/images/betting/icons/betting-icons-black.png'); }
+.sportIcon div.sportIconBASEBALL { background-position: 384px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconGOLF { background-position: 224px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconSOCCER { background-position: 256px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconAMERICANFOOTBALL { background-position: 432px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconICEHOCKEY { background-position: 400px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconTENNISMEN { background-position: 64px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconCRICKET { background-position: 336px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconBASKETBALLMEN { background-position: 368px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconMOTORSPORTS { background-position: 272px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconTENNISWOMEN { background-position: 64px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconRUGBYUNION { background-position: 416px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconHANDBALLMEN { background-position: 192px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconHANDBALLWOMEN { background-position: 208px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconSNOOKER { background-position: 112px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconSOCCERWOMEN { background-position: 256px 0px; width: 16px; height: 16px; }
+/*.sportIcon div.sportIconGAELICHURLING { background-position: ??px 0px; width: 16px; height: 16px; }*/
+.sportIcon div.sportIconBOXING { background-position: 352px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconBASKETBALLWOMEN { background-position: 368px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconDARTS { background-position: 304px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconRUGBYLEAGUE { background-position: 416px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconVOLLEYBALLMEN { background-position: 240px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconVOLLEYBALLWOMEN { background-position: 240px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconCYCLING { background-position: 320px 0px; width: 16px; height: 16px; }
+.sportIcon div.sportIconMIXEDMARTIALARTS { background-position: 352px 0px; width: 16px; height: 16px; }
+/*.sportIcon div.sportIconATHLETICS { background-position: ??px 0px; width: 16px; height: 16px; }*/
+.sportIcon div.sportIconBEACHVOLLEYBALL { background-position: 240px 0px; width: 16px; height: 16px; }
+
+.PluginBettingOddsTable, .PluginBettingOddsMarketsTable .marketTable, .PluginBettingOddsMarketsTable .marketTableAlternate { background: #e0e0e0; }
+.PluginBettingCenterColumn td, .PluginBettingCenterColumn a { color: #333333 ; }
+.PluginBettingCenterColumn td { height: 26px; padding: 0 5px 0 5px; }
+.PluginBettingCenterColumn th { background: #000; height: 30px; color: #fff; text-align: left; padding: 0 0 0 5px; }
+.PluginBettingCenterColumn .breadcrumbs { color: #ffffff; border: 1px solid #999; }
+
+.PluginBettingCenterColumn .PluginBettingActiveSettledBets 
+{
+	width: 100%;
+}
+.PluginBettingCenterColumn .PluginBettingActiveSettledBets tr,
+.PluginBettingCenterColumn .PluginBettingOddsMarketsTable .marketTableAlternate tr,
+.PluginBettingCenterColumn .PluginBettingOddsMarketsTable .marketTable tr,
+.PluginBettingCenterColumn .PluginBettingOddsTable tr { 
+	border-bottom: 1px solid #adadad;
+	border-left: 1px solid #adadad;
+	border-right: 1px solid #adadad;
+}
+
+.PluginBettingCenterColumn .PluginBettingActiveSettledBets tr.alternate,
+.PluginBettingCenterColumn .PluginBettingOddsMarketsTable .marketTableAlternate tr.alternate,
+.PluginBettingCenterColumn .PluginBettingOddsMarketsTable .marketTable tr.alternate,
+.PluginBettingCenterColumn .PluginBettingOddsTable tr.alternate { 
+	border-bottom: 1px solid #adadad;
+	border-left: 1px solid #adadad;
+	border-right: 1px solid #adadad;
+}
+.PluginBettingCenterColumn .PluginBettingActiveSettledBetsNested 
+{
+	width: 100%;
+	margin: 5px 0 5px 0;
+}
+
+.PluginBettingCenterColumn .PluginBettingOddsTable th { text-align: left; }
+
+.PluginBettingCenterColumn th.odds,
+.PluginBettingCenterColumn th.oddscurrent {
+	text-align: center;
+	width: 40px;
+	padding: 0 5px 0 5px;
+}
+
+.PluginBettingCenterColumn td.odds,
+.PluginBettingCenterColumn td.oddscurrent {
+	text-align: center;
+	width: 40px!important;
+	padding: 0 5px 0 5px;
+	border-left: 1px solid #adadad;
+	border-right: 1px solid #adadad;
+        font-weight: bold;
+}
+
+.PluginBettingCenterColumn td.oddscurrent a {
+	color: #fff;
+}
+
+.PluginBettingCenterColumn td.oddscurrent {
+	background: #0488db;
+}
+.PluginBettingCenterColumn .oddscurrent .OddsDisabled { }
+.PluginBettingCenterColumn .oddscurrent .OddsEmpty { }
+.PluginBettingCenterColumn .antal {
+	width: 30px;
+	padding: 0 10px 0 0;
+	border-right: none;
+}
+.PluginBettingCenterColumn .time {
+	width: 66px;
+	border-right: 1px solid #adadad;
+	text-align: center;
+}
+.PluginBettingCenterColumn .timeUpcomingLive {
+	width: 55px;
+}
+.PluginBettingOddsMarketsTable 
+{
+	width: 100%;
+	vertical-align: top;
+	border: none;
+}
+.PluginBettingOddsMarketsTable td {
+	border: none;
+	background: none;
+	padding: 0;
+	vertical-align: top;
+	width: 50%;
+}
+.PluginBettingOddsMarketsTable .marketTable {
+	width: 98.1%;
+	margin-top: 10px;
+	margin-right: 1.9%;
+}
+
+.PluginBettingOddsMarketsTable .marketTableAlternate {
+	width: 98.1%;
+	margin-top: 10px;
+	margin-left: 1.9%;
+}
+
+.PluginBettingOddsMarketsTable .marketTable td,
+.PluginBettingOddsMarketsTable .marketTableAlternate td {
+	padding: 0 5px 0 5px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.PluginBettingOddsMarketsTable .marketTable td.odds,
+.PluginBettingOddsMarketsTable .marketTableAlternate td.odds {
+	width: 40px;
+}
+
+.PluginBettingOddsMarketsTable .marketTable th,
+.PluginBettingOddsMarketsTable .marketTableAlternate th {
+	border: 1px solid #adadad;
+}
+
+.PluginBettingActiveSettledBets { }
+.PluginBettingOddsTable { width: 100%; }
+.PluginBettingOddsTableLiveAtm { width: 100%; }
+.PluginBettingOddsTablePopular { }
+.PluginBettingOddsTableClosing { }
+.PluginBettingOddsTableUpcomingLive { }
+.PluginBettingOddsTableSports { }
+.PluginBettingOddsTableCompetitions { }
+.PluginBettingLiveOddsTable { width: 100%; height: 150px; }
+.PluginBettingLiveOddsTable td { }
+
+.liveBgBASEBALL { background: url('/images/betting/livebg/baseball.png') top center no-repeat; }				/* ID: 1, Baseball */
+.liveBgGOLF { background: url('/images/betting/livebg/generic.png') top center no-repeat; }						/* ID: 5, Golf */
+.liveBgSOCCER { background: url('/images/betting/livebg/soccer.png') top center no-repeat; }					/* ID: 7, SOCCER */
+.liveBgAMERICANFOOTBALL { background: url('/images/betting/livebg/generic.png') top center no-repeat; }			/* ID: 8, American Football */
+.liveBgICEHOCKEY { background: url('/images/betting/livebg/icehockey.png') top center no-repeat; }				/* ID: 10, Ice Hockey */
+.liveBgTENNISMEN { background: url('/images/betting/livebg/tennis.png') top center no-repeat; }					/* ID: 11, Tennis Men */
+.liveBgCRICKET { background: url('/images/betting/livebg/cricket.png') top center no-repeat; }					/* ID: 13, Cricket */
+.liveBgBASKETBALLMEN { background: url('/images/betting/livebg/basketball.png') top center no-repeat; }			/* ID: 15, Basketball Men */
+.liveBgMOTORSPORTS { background: url('/images/betting/livebg/generic.png') top center no-repeat; }				/* ID: 20, Motor Sports */
+.liveBgTENNISWOMEN { background: url('/images/betting/livebg/tennis.png') top center no-repeat; }				/* ID: 26, Tennis Women */
+.liveBgRUGBYUNION { background: url('/images/betting/livebg/generic.png') top center no-repeat; }				/* ID: 30, Rugby Union */
+.liveBgHANDBALLMEN { background: url('/images/betting/livebg/generic.png') top center no-repeat; }				/* ID: 31, Handball Men */
+.liveBgHANDBALLWOMEN { background: url('/images/betting/livebg/generic.png') top center no-repeat; }			/* ID: 32, Handball Women */
+.liveBgSNOOKER { background: url('/images/betting/livebg/generic.png') top center no-repeat; }					/* ID: 35, Snooker */
+.liveBgAUSTRALIANRULESFOOTBALL { background: url('/images/betting/livebg/generic.png') top center no-repeat; }	/* ID: 36, Australian Rules Football */
+.liveBgSOCCERWOMEN { background: url('/images/betting/livebg/soccer.png') top center no-repeat; }				/* ID: 37, Soccer Women */
+.liveBgGAELICHURLING { background: url('/images/betting/livebg/generic.png') top center no-repeat; }			/* ID: 39, Gaelic Hurling */
+.liveBgBANDY { background: url('/images/betting/livebg/generic.png') top center no-repeat; }					/* ID: 42, Bandy */
+.liveBgBOXING { background: url('/images/betting/livebg/generic.png') top center no-repeat; }					/* ID: 43, Boxing */
+.liveBgBASKETBALLWOMEN { background: url('/images/betting/livebg/basketball.png') top center no-repeat; }		/* ID: 45, Basketball Women */
+.liveBgFLOORBALL { background: url('/images/betting/livebg/generic.png') top center no-repeat; }				/* ID: 46, Floorball */
+.liveBgDARTS { background: url('/images/betting/livebg/generic.png') top center no-repeat; }					/* ID: 47, Darts */
+.liveBgRUGBYLEAGUE { background: url('/images/betting/livebg/generic.png') top center no-repeat; }				/* ID: 48, Rugby League */
+.liveBgVOLLEYBALLMEN { background: url('/images/betting/livebg/generic.png') top center no-repeat; }			/* ID: 52, Volleyball Men */
+.liveBgVOLLEYBALLWOMEN { background: url('/images/betting/livebg/generic.png') top center no-repeat; }			/* ID: 54, Volleyball Women */
+.liveBgCYCLING { background: url('/images/betting/livebg/generic.png') top center no-repeat; }					/* ID: 57, Cycling */
+.liveBgMIXEDMARTIALARTS { background: url('/images/betting/livebg/generic.png') top center no-repeat; }			/* ID: 59, Mixed Martial Arts */
+.liveBgATHLETICS { background: url('/images/betting/livebg/generic.png') top center no-repeat; }				/* ID: 61, Athletics */
+.liveBgBEACHVOLLEYBALL { background: url('/images/betting/livebg/generic.png') top center no-repeat; }			/* ID: 68, Beach Volleyball */
+
+.PluginBettingLiveOddsTableMatchInfo { width: 75%; text-align: center; }
+.PluginBettingLiveOddsTableMatchInfo td { font: 14px Verdana; font-weight: bold; color: rgb(255,255,255); }
+.PluginBettingLiveOddsTableMatchInfoCompetition { font-size: 14px; color: rgb(238,0,31); }
+.PluginBettingLiveOddsTableMatchInfoCompetitors { font-size: 14px; }
+.PluginBettingLiveOddsTableMatchInfoScoreBoardType1 { width: 100%; padding: 0; margin: 0; }
+.PluginBettingLiveOddsTableMatchInfoScoreBoardType2 { width: 100%; padding: 0; margin: 0; }
+.PluginBettingLiveOddsTableMatchInfoScoreBoardType2 th { height: 12px; padding-left: 11px; background: none; font: 10px Verdana; font-weight: bold; }
+.PluginBettingLiveOddsTableMatchInfoScoreBoardType2 td { padding-left: 10px; }
+.PluginBettingLiveOddsTableMatchInfoScoreBoardType3 { padding: 0; margin: 0; }
+.PluginBettingLiveOddsTableMatchInfoScoreBoardType3 th { height: 12px; padding-left: 11px; background: none; font: 10px Verdana; font-weight: bold; color: rgb(255,255,255); }
+.PluginBettingLiveOddsTableMatchInfoScoreBoardType3 td { padding-left: 10px; }
+.PluginBettingLiveOddsTableMatchInfoScoreBoardType3 .periodScore { color: rgb(238,0,31); }
+
+.currentHomeScore { font-size: 24px; }
+.currentMatchMinute { font-size: 16px; color: rgb(238,0,31); }
+.currentAwayScore { font-size: 24px; }
+.home { font-size: 12px; color: rgb(238,0,31); }
+.away { font-size: 12px; color: rgb(238,0,31); }
+
+.sportsBanner
+{
+	padding: 20px 26px 20px 26px; 
+	margin-bottom: 30px; 
+	color: #c2c2c2;
+	font-size: 12px;
+}
+.sportsBanner h1
+{
+	font-family: Oswald, sans-serif;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-shadow: 0px 0px 5px #000000;
+	padding-bottom: 2px;
+}
+.sportsBanner.basketball
+{
+	background: #444444 url( '/images/sportsBanners/banner_basketball.png' ) top right no-repeat;
+}
+.sportsBanner.generic
+{
+	background: #444444 url( '/images/sportsBanners/banner_generic.png' ) top right no-repeat;
+}
+.sportsBanner.icehockey
+{
+	background: #444444 url( '/images/sportsBanners/banner_icehockey.png' ) top right no-repeat;
+}
+.sportsBanner.olympic
+{
+	background: #444444 url( '/images/sportsBanners/banner_olympic.png' ) top right no-repeat;
+}
+.sportsBanner.soccer
+{
+	background: #444444 url( '/images/sportsBanners/banner_soccer.png' ) top right no-repeat;
+}
+.sportsBanner.tennis
+{
+	background: #444444 url( '/images/sportsBanners/banner_tennis.png' ) top right no-repeat;
+}
+
+/* BETTING BETSLIP */
+.PluginBettingRightColumn .betslipbet,
+.PluginBettingRightColumn .betslipbetalternate,
+.PluginBettingRightColumn .betslipbeterror 
+{
+	width: 100%;
+	border-bottom: 1px solid #999;
+        border-left: 1px solid #999;
+        border-right: 1px solid #999;
+}
+
+.PluginBettingRightColumn .betslipbet { background: none; }
+.PluginBettingRightColumn .betslipbetalternate { background: none; }
+.PluginBettingRightColumn .betslipbeterror { background: red; }
+
+.PluginBettingRightColumn .betsliperror p { color: red; }
+
+.PluginBettingRightColumn .betslipbet td,
+.PluginBettingRightColumn .betslipmoney td,
+.PluginBettingRightColumn .betslipbetalternate td,
+.PluginBettingRightColumn .betslipbeterror td {
+	padding: 0 5px 0 5px;
+	color: #000;
+	height: 20px;
+}
+
+.PluginBettingRightColumn .betslipbet .stake td,
+.PluginBettingRightColumn .betslipbetalternate .stake td {
+	font-weight: bold;
+}
+
+.PluginBettingRightColumn .betslipbet .right,
+.PluginBettingRightColumn .betslipbetalternate .right,
+.PluginBettingRightColumn .betslipbeterror .right {
+	width: 70px;
+}
+
+.PluginBettingRightColumn .betslipSummary 
+{
+	width: 100%;
+	margin: 5px 0 0 0;
+	color: #000;
+}
+
+.PluginBettingRightColumn .betslipSummary td {
+	height: 20px;
+	padding: 0 5px 0 5px;
+	font-weight: bold;
+}
+
+.PluginBettingRightColumn .betslipSummary .right {
+	font-weight: normal;
+        width: 72px;
+}
+
+.PluginBettingRightColumn .betslipbet input,
+.PluginBettingRightColumn .betslipbetalternate input,
+.PluginBettingRightColumn .betslipbeterror input,
+.PluginBettingRightColumn .betslipSummary input {
+	width: 36px;
+	height: 15px;
+	border: 1px solid #000;
+	outline: none;
+	font-size: 12px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #000;
+        margin-bottom: 2px;
+	text-align: center;
+        padding-right: 2px;
+}
+
+.PluginBettingRightColumn #PluginBettingBetSlipPotentialPayout,
+.PluginBettingRightColumn #PluginBettingBetSlipTotalOdds {
+	background: none;
+	border: 0;
+	outline: 0;	
+}
+
+.PluginBettingRightColumn .betsliperror {
+	padding: 5px;
+	margin: 10px 0 0 0;
+}
+
+.PluginBettingRightColumn .betslipaccepted {
+	margin: -15px 0 5px 5px;
+	color: green;
+}
+
+/* Classes that pops up everywhere on the site */
+.submitBtn 
+{
+	background: #00484d;
+	border: 1px solid #00484d;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Arimo', sans-serif;
+	padding: 8px 15px;
+}
+.submitBtn:hover
+{
+	color: #ffffff;
+}
+
+.modalPopup
+{
+	min-height: 250px;
+	background: #008892;
+	color: #FFFFFF;
+	display: none;
+	min-width: 300px;
+	padding: 0;
+	font-family: 'Arimo', sans-serif;
+}
+.modalPopup .button.b-close
+{
+	cursor: pointer;
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	right: -15px;
+	top: -18px;
+	background-image: url( '/images/misc/fancybox_sprite.png' );
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+.modalPopup table
+{
+	border-spacing: 0px;
+}
+.modalPopup tr:first-child, .modalPopup tr:last-child
+{
+	background: #00c9d8;
+}
+.modalPopup tr:last-child td
+{
+	float:right;
+}
+.modalPopup td
+{
+	padding: 10px 50px;
+}
+.modalPopup td a, .modalPopup td a:hover, .modalPopup td a:visited
+{
+	color:#FFFFFF;
+}
+.modalPopup .submitBtn
+{
+	cursor:pointer;
+}
+.searchTable
+{
+	width: 100%;
+	padding-bottom: 20px;
+	color: #fff;
+}
+.searchTable td
+{
+	height: 40px;
+	vertical-align: top;
+}
+.searchTable .submitBtn
+{
+	float: right;
+}
+.searchTable .label
+{
+	padding-top: 6px;
+}
+
+.gridBtn
+{
+	min-width: 50px;
+	height: 22px;
+	background: url( '/images/misc/gridBtn_bg.png' ) repeat-x;
+	border: 1px solid #23a6f6;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #fefefe;
+	text-transform: uppercase;
+}
+
+.txtError
+{
+	background: none repeat scroll 0 0 #dd0000;
+    border-radius: 2px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.label
+{
+	float: right;
+	padding-right: 7px;
+}
+
+.txtBox
+{
+	height: 40px;
+	width: 175px;
+	font-size: 14px;
+	color: #00484d;
+	padding-left: 10px;
+	line-height:40px;
+}
+.txtArea
+{
+	min-height: 56px;
+	min-width: 175px;
+	font-size: 14px;
+	color: #00484d;
+	padding-left: 10px;
+}
+.txtBox.small
+{
+	width: 90px;
+}
+.txtBox.large
+{
+	width: 275px;
+}
+.dropDown
+{
+	height: 40px;
+	font-size: 14px;
+	color: #00484d;
+	padding: 0 0 0 7px;
+	width: 184px;
+}
+
+.stdGrid
+{
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #111111;
+}
+.stdGrid tr
+{
+	margin: 0 10px 0 10px;
+}
+.stdGrid tr th
+{
+	background-color: #404040;
+	height: 27px;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	border-top: solid 1px #b3b3b3;
+	border-bottom: solid 1px #b3b3b3;
+}
+.stdGrid tr th a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.stdGrid tr th.left, .stdGrid tr td.left
+{
+	padding-left: 10px;
+}
+.stdGrid tr th.right, .stdGrid tr td.right 
+{
+	padding-right: 10px;
+}
+.stdGrid tr
+{
+	background-color: #e7ecf0;
+}
+.stdGrid tr.alternate
+{
+	background-color: #d7e0e5;
+}
+.stdGrid tr td 
+{ 
+	font-size: 11px;
+	height: 27px;
+}
+
+/* Misc overrides */
+input[type="button"] {
+	cursor: pointer;
+}
+
+/* Mindpoint overrides */
+#PluginRegisterRegister,
+#PluginRegisterStep2,
+#PluginContactUsSend,
+#PluginAccountInfoSaveChanges,
+#PluginBankInfoSaveChanges,
+#PluginChangePasswordSaveChanges,
+#PluginChangeNewsletterSaveChanges,
+#PluginAccountStatsSearch,
+#PluginReportsYesterday,
+#PluginReportsLastMonth,
+#PluginReportsThisMonth,
+#PluginReportsGetReport,
+#PluginSelfLimitWeeklyBudgetSave,
+#PluginSelfLimitTakeABreakSave,
+#PluginTransactionsSearch,
+#PluginVouchersRedeemSend,
+#PluginWithdrawalsPendingCancel .gridBtn
+{
+	background: none repeat scroll 0 0 #00C9D8;
+    border: 1px solid #00484D;
+    border-radius: 5px;
+    color: #00484D;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 41px;
+    line-height: 20px;	
+}
+#PluginRegisterStep1{ background: none; color: #00c9d8; border: none; text-decoration: underline;}
+.searchTable td a{ color: #fff; text-decoration: underline;}
+#PluginSelfLimit a
+{
+	/*background: none repeat scroll 0 0 #00C9D8;
+    border: 1px solid #00484D;
+    border-radius: 5px;
+    color: #00484D;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 41px;
+    line-height: 41px;
+    min-width: 150px;
+    padding: 0 3px;
+    text-align: center;
+    text-decoration: none;*/
+    text-transform: uppercase;
+	color:#FFFFFF;
+	display:block;
+	margin:10px 0;
+}
+
+
+/* Text Heavy pages */
+
+#contentText {width:875px;padding:30px;margin-bottom:100px;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);min-height:400px}
+#
+
+/* REGISTER Plugin Type2*/
+
+#PluginRegister label span { display: none; }
+/*#PluginRegister span.txtError { position: absolute; top: 10px; right: 10px; }*/
+#PluginRegister span.txtError { margin:10px 30px;padding:10px;display:block }
+#PluginRegister #reg-error-username-taken, #PluginRegister #reg-error-email-taken {position: absolute;right: 56px;top: 0;width: 380px; margin:0;padding:0}
+#PluginRegister .PluginRegisterItem { position: relative; display: inline; float: left; margin: 0 1.6% 8px 0; border: 1px solid #dadada; overflow: hidden; height: 40px; padding: 0 40px 0 0; }
+#PluginRegister #PluginRegisterDobMonthWrapper select, 
+#PluginRegister #PluginRegisterDobDayWrapper select, 
+#PluginRegister #PluginRegisterGenderWrapper select, 
+#PluginRegister #PluginRegisterCellPhoneWrapper input { margin-left: 0; }
+#PluginRegister #PluginRegisterDobMonthWrapper, 
+#PluginRegister #PluginRegisterDobDayWrapper, 
+#PluginRegister #PluginRegisterGenderWrapper, 
+#PluginRegister #PluginRegisterCellPhoneWrapper { 	padding: 0; }
+#PluginRegister #PluginRegisterLastnameWrapper, 
+#PluginRegister #PluginRegisterGenderWrapper, 
+#PluginRegister #PluginRegisterCityWrapper, 
+#PluginRegister #PluginRegisterCellPhoneWrapper, 
+#PluginRegister #PluginRegisterRegCodeWrapper { margin-right: 0; }
+#PluginRegister p { margin: 0; }
+#PluginRegister p::after { float: none; clear: both; content: ' '; display: table; }
+#PluginRegister #PluginRegisterEmailWrapper,
+#PluginRegister #PluginRegisterUsernameWrapper,
+#PluginRegister #PluginRegisterPasswordWrapper,
+#PluginRegister #PluginRegisterPasswordRepeatWrapper,
+#PluginRegister #PluginRegisterAddress1Wrapper,
+#PluginRegister #PluginRegisterCountryWrapper { width: 100%; }
+#PluginRegister #PluginRegisterFirstnameWrapper,
+#PluginRegister #PluginRegisterLastnameWrapper,
+#PluginRegister #PluginRegisterPhonePrefixWrapper,
+#PluginRegister #PluginRegisterCellPhoneWrapper,
+#PluginRegister #PluginRegisterRefCodeWrapper,
+#PluginRegister #PluginRegisterRegCodeWrapper { width: 49.2%; }
+#PluginRegister #PluginRegisterDobYearWrapper,
+#PluginRegister #PluginRegisterDobMonthWrapper,
+#PluginRegister #PluginRegisterDobDayWrapper,
+#PluginRegister #PluginRegisterGenderWrapper { width: 18.7%; }
+#PluginRegister #PluginRegisterZipCodeWrapper { width: 23.8%; }
+#PluginRegister #PluginRegisterCityWrapper { width: 74.6%; }
+#PluginRegister #PluginRegisterGenderWrapper { float: right; }
+#PluginRegister [data-icon]::before { font-family: glyphicons; content: attr(data-icon); color: #000; z-index: 2; display: block; font-size: 20px; width: 40px; height: 40px; text-align: center; background: #dadada; border: 1px solid #dadada; padding: 10px 0 0 0; position: absolute; }
+#PluginRegister input[type="text"],
+#PluginRegister input[type="password"],
+#PluginRegister input[type="tel"],
+#PluginRegister input[type="email"],
+#PluginRegister select { float: left; width: 100%; overflow: hidden; margin-left: 40px; border: none; outline: none; height: 100%; display: block; color: #000; text-indent: 5px; }
+
+#PluginRegister input[type="text"]:focus,
+#PluginRegister input[type="password"]:focus,
+#PluginRegister input[type="tel"]:focus,
+#PluginRegister input[type="email"]:focus,
+#PluginRegister select:focus {
+	border: 1px solid #000;
+}
+
+#PluginRegister select { line-height: 35px; }
+
+#PluginRegister input[type="checkbox"] { width: 40px; 	height: 40px; float: left; margin: 0 10px 0 0; background: #dadada; border: 1px solid #dadada; }
+#PluginRegister input[type="submit"] { display: block; width: 50%; margin: 0 auto; margin-top: 16px; height: 40px; font-size: 24px; background: #333; border: none; color: #fff; cursor: pointer; }
+
+
+/* FREE SPINS */
+#freespin {display:table;margin-bottom:100px;}
+#freespin h1{font-family: 'Arimo', sans-serif;text-align:center;font-size:24px;height:80px;line-height:80px;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#freespin .freespinContent {margin-top:0px;}
+#freespin .column {width:215px;float:left;font-family: 'Arimo'}
+#freespin .first {margin:240px 25px 0 0;}
+#freespin .second {margin:160px 25px 0 0;}
+#freespin .third {margin:80px 25px 0 0;}
+#freespin .column .top, #freespin .column .cta {background: #00c9d8;position:relative;width: 225px;left:-5px}
+#freespin .column .offer, #freespin .column .games {background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#freespin .column .image img {position:relative;bottom:-5px;left:-20px}
+#freespin .column .top {color:#00484d;text-align:center;padding:25px 0;text-transform: uppercase;font-weight:700}
+#freespin .column .top  h2 {font-size:72px}
+#freespin .column .top  span {font-size:24px}
+#freespin .column .offer { font-size:18px;text-transform: uppercase;padding:20px;text-align:center}
+#freespin .column .cta {color:#00484d;text-align:center;text-transform: uppercase;font-weight:700}
+#freespin .column .cta  p {font-size:16px;padding: 20px 0 10px 0}
+#freespin .column .cta .code {font-size:36px;padding: 5px 0;background:#FFFFFF;width:100%}
+#freespin .column .cta .ctaButon {padding:20px}
+#freespin .column .cta .ctaButon a {cursor:pointer;text-decoration:none}
+#freespin .column .games {color:#FFFFFF;text-align:center;text-transform: uppercase; font-size:18px;padding:20px 0 50px 0;}
+
+#freespin .tnc {margin:90px 0 60px 50px;font-family: 'Arimo'}
+#freespin .tnc h3 {font-size:14px; text-transform: uppercase}
+#freespin .tnc ul {list-style: none;margin-left: 0;padding-left: 1em;}
+#freespin .tnc li:before {display: inline-block;content: "-";width: 1em;margin-left: -1em;}
+
+#freespin .offers {margin-bottom:20px;float:left;display:table;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#freespin .offers .image {padding:20px;float:left;}
+#freespin .offers .image img {border:5px solid #0e1d1e}
+#freespin .offers .text {padding:20px 0;display:table-cell;width:50%;vertical-align:middle;}
+#freespin .offers .text h3 {font-size:24px; font-weight:700;display:block;padding-bottom:10px}
+#freespin .offers .text p {font-size:18px; font-weight:700;}
+#freespin .offers .text a {font-size:18px;color:#FFFFFF;}
+#freespin .offers .cta {padding:45px 40px;float:right;background:#00c9d8;}
+#freespin .offers .cta a {font-weight:700; text-align:center;text-transform:uppercase;color:#00484d;padding-top:35px;display:block}
+
+#freespin .terms {padding:50px;float:left;display:table;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);margin:50px 0;}
+#freespin .terms .left {width: 30%;float:left}
+#freespin .terms .left p {padding: 0 0 10px 0}
+#freespin .terms .right {width: 67%; float:right}
+#freespin .terms .right table {width:100%;}
+#freespin .terms .right table td {background: url("/images/framework/transparent-bg-light.png") repeat scroll 0 0 rgba(0, 0, 0, 0);height:54px;}
+#freespin .terms .right table td.firstCell {text-align:center;line-height:54px}
+#freespin .terms .right table td.firstCell img {vertical-align:middle;}
+#freespin .terms .right table td.lastCell {padding:0 30px;font-weight:700;}
+
+/* CONTACT */
+#contact {width:875px;padding:30px;margin-bottom:100px;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#contact h1 {font-size: 24px;font-weight:700;text-transform:uppercase;padding-bottom:20px;}
+#contact form p {display:none;}
+#contact form table {width:100%;}
+#contact form table tr td {margin-bottom:10px;float:left;}
+#contact form table tr:nth-last-child(10) td {width:100% !important;overflow:hidden;}
+#contact form table tr:nth-last-child(10) td span {display: block;line-height: 20px;margin-bottom: 10px;padding: 10px;width: 855px;}
+#contact form table tr:nth-last-child(5) td {width:327px;overflow:hidden;}
+#contact form table tr:nth-last-child(3) td:first-child input {position: relative;right: -260px;top: 18px;}
+#contact form table tr:nth-last-child(3) td img {height:60px; width:220px}
+#contact form table tr td:first-child {width:230px;font-size:16px;line-height:40px;}
+#contact form table tr td .txtBox, #contact form table tr td select {width:317px !important;cursor:pointer}
+#contact form table tr td select {width:344px !important;padding-right:30px;background: url("/images/misc/contact_form_dropdown.png") repeat scroll 0 0 #FFFFFF;}
+#contact form table tr td option {width:327px;background:#FFFFFF;border:0;}
+#contact form table tr td textarea.txtBox {line-height: 18px; padding-top: 10px;padding-bottom:10px; width:600px !important; height:140px !important}
+#contact form table tr td .submitBtn {line-height:20px;}
+
+/* REGISTER */
+#register {width:875px;padding:30px;margin-bottom:100px;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#register  h1 {font-size: 24px;font-weight: 700;margin: 0 0 15px 50px;text-transform: uppercase;}
+#register #PluginRegister {left: -30px;position: relative;width: 935px;}
+#register #PluginRegister .PluginRegisterItem {border:0;width:100%}
+#register #PluginRegister .PluginRegisterItem [data-icon]:before {content:none;}
+#register #PluginRegister .PluginRegisterItem label, #register #PluginRegister .reg-section-agree input {display:block;float:left;width:189px;text-align:right;line-height:40px}
+#register #PluginRegister label span {display:block;float:right;}
+#register #PluginRegister input {width:317px;margin-left:10px;text-indent:0;padding-left:10px}
+#register #PluginRegister select {height:40px;width:327px;margin-left:10px;padding-left:5px;text-indent:0}
+#register input::-webkit-input-placeholder {opacity: 0;}
+#register input:-moz-placeholder {opacity: 0;}
+#register input::-moz-placeholder {opacity: 0;}
+#register input:-ms-input-placeholder {color: transparent;}
+#register .reg-section-account, #register .reg-section-agree {background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);padding-top:10px}
+#register #PluginRegister #PluginRegisterDobYearWrapper, #register #PluginRegister #PluginRegisterDobMonthWrapper, #register #PluginRegister #PluginRegisterDobDayWrapper {width:103px;padding:0;margin-right:10px}
+#register #PluginRegister #PluginRegisterDobYearWrapper select, 
+#register #PluginRegister #PluginRegisterDobMonthWrapper select, 
+#register #PluginRegister #PluginRegisterDobDayWrapper select 
+{cursor:pointer;background: url("/images/misc/contact_form_dropdown.png") repeat scroll -234px 0 #FFFFFF;width:113px} 
+#register #PluginRegister #PluginRegisterDobYearWrapper {width: 292px}
+#register #PluginRegister #PluginRegisterDobYearWrapper select {left: 189px;position: relative;top: -40px;}
+#register #PluginRegister #PluginRegisterGenderWrapper {float: left;margin-right: 100px;width: 405px;}
+#register #PluginRegister #PluginRegisterGenderWrapper select {background: url("/images/misc/contact_form_dropdown.png") repeat scroll -121px 0 #ffffff;cursor: pointer;left: 189px;position: relative;top: -40px;width: 225px;} 
+#register #PluginRegister #PluginRegisterCountryWrapper, #register #PluginRegister #PluginRegisterPhonePrefixWrapper {float: left;margin-right: 100px;width: 486px;}
+#register #PluginRegister #PluginRegisterCountryWrapper select, #register #PluginRegister #PluginRegisterPhonePrefixWrapper select {background: url("/images/misc/contact_form_dropdown.png") repeat scroll 0 0 #ffffff;cursor: pointer;left: 189px;position: relative;top: -40px;width: 346px;} 
+#register #PluginRegister #PluginRegisterCellPhoneWrapper {margin-left:189px}
+#register .reg-section-agree {padding-bottom:10px}
+#register .reg-section-agree a {color:#FFFFFF}
+#register .reg-section-agree input {visibility:hidden;}
+#register .reg-section-agree label {background: url("/images/register/register-agee-checkbox.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);cursor: pointer;display: block;margin-left: 189px;padding: 0 130px 0 50px;}
+#register .reg-section-agree input[type=checkbox]:checked ~ label {background: url("/images/register/register-agee-checkbox-checked.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#register #PluginRegister #PluginRegisterRegister {font-size: 14px;margin: 20px 0 0 406px;padding: 0;width: 120px;}
+
+
+/* CASHIER */
+#cashier {width:875px;padding:30px 30px;margin-bottom:100px;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#cashier h1 {font-family: "Arimo",sans-serif;font-size: 24px;height: 80px;line-height: 80px;text-align: center;text-transform:uppercase}
+#cashier ul {display:table;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);padding: 0 0 18px 30px; margin-bottom:50px;width:905px;position:relative;left:-30px}
+#cashier li {margin:20px 25px 0 0;padding:0;}
+#cashier a {color:#FFFFFF;}
+#cashier table {margin:20px 0}
+#cashier table td {margin:0 0 10px 0;float:left}
+#cashier table .label {width:120px;display:block;text-align:right;line-height:40px;padding-top:0;}
+#cashier table .depositText, #cashier table .AmountMinMax, #mbFee, #pscFee, #apcoFee, #eutellerFee, #netellerFee {line-height:40px}
+#cashier table input {width:150px;}
+#cashier table .dropDown {width:160px;-webkit-appearance:none;-moz-appearance:none}
+#cashier table input.submitBtn {width:120px;margin:20px 0 0 123px}
+#cashier > form, #cashier > .PluginWithdrawals > form {width:525px; margin: 0 175px}
+#cashier #PluginDepositsVoucherSend {margin:0 0 0 10px}
+#cashier #PluginWithdrawalsBank {position:relative; left:-50px; width:635px}
+#cashier #PluginWithdrawalsBankAmount {margin-right:20px}
+#cashier #PluginWithdrawalsBankRequest, #cashier #PluginWithdrawalsNetellerRequest, #cashier #PluginWithdrawalsApcoRequest {width:210px}
+#cashier span.txtError:nth-last-child(2) {display:none}
+#cashier span.txtError {display: block;line-height: 20px;margin-bottom: 10px;padding: 10px;width: 503px;}
+#cashier #PluginVouchersRedeem tr:nth-last-child(1) td:nth-child(3) {width: 160px !important}
+#cashier #PluginVouchersRedeem tr:nth-last-child(1) td:nth-child(3) input {margin:0}
+#cashier #PluginWithdrawalsMbRequest {width: 195px !important}
+#cashier #PluginDepositsNeteller img, #cashier #PluginDepositsMb img, #cashier #PluginDepositsPsc img, #cashier #PluginDepositsApco img {display:none}
+#cashier > .PluginWithdrawals > form#PluginWithdrawalsPendingCancel {width:875px; margin: 0px}
+#PluginWithdrawalsPendingCancel table tr, #PluginWithdrawalsPendingCancel table th {background: none; color: #FFFFFF; border:none}
+#PluginWithdrawalsPendingCancel table td {float:none}
+
+
+/* ACCOUNT */
+#account, #bankinfo, #password ,#newsletter, #stats, #reports, #affiliate {width:935px;padding:30px 0;margin-bottom:100px;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);min-height:400px}
+#account form table {border-collapse:collapse;}
+#account form table tr td span {font-size:16px;display: block;font-size: 16px;height: 40px;line-height: 40px;margin-bottom: 10px;}
+#account form table tr td input, #account form table tr td select {width:317px;margin-bottom:10px;}
+#account form table tr td:nth-last-child(2) {width:100px;float:left}
+#account form table tr td:nth-last-child(1) {width:327px;float:left}
+#account form table tr td:nth-last-child(5) {width:170px;float:left}
+#account form table tr td:nth-last-child(4) {width:327px;float:left}
+#account form table tr:nth-last-child(3) {height:322px;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#account form table tr:nth-last-child(2) td:nth-child(2) input {margin-top:10px}
+#account form table tr:nth-last-child(2) td:nth-child(1) span {padding-top:10px}
+#account form table tr:nth-last-child(10) td:nth-child(5) input,
+#account form table tr:nth-last-child(9) td:nth-child(5) input,
+#account form table tr:nth-last-child(8) td:nth-child(5) input,
+#account form table tr:nth-last-child(7) td:nth-child(5) input,
+#account form table tr:nth-last-child(6) td:nth-child(5) input,
+#account form table tr:nth-last-child(5) td:nth-child(5)
+{position:relative;top:372px;left:-436px}
+#account form table tr:nth-last-child(10) td:nth-child(4) span,
+#account form table tr:nth-last-child(9) td:nth-child(4) span,
+#account form table tr:nth-last-child(8) td:nth-child(4) span,
+#account form table tr:nth-last-child(7) td:nth-child(4) span,
+#account form table tr:nth-last-child(6) td:nth-child(4) span,
+#account form table tr:nth-last-child(5) td:nth-child(4) span
+{position:relative;top:372px;left:-436px}
+#account form table tr:nth-last-child(10) td:nth-child(1) span,
+#account form table tr:nth-last-child(8) td:nth-child(1) span
+{margin-top: 10px}
+#account form table tr:nth-last-child(8) td:nth-child(2) input {margin-top:10px}
+#account form table tr {width:935px;display:table}
+#account form table tr:nth-last-child(10), #account form table tr:nth-last-child(9) {background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0); }
+#account form table tr:nth-last-child(10) td:nth-child(1) input, #account form table tr:nth-last-child(10) td:nth-child(2) input {margin-top:10px;}
+#account form table tr:nth-last-child(1) td:nth-child(2) input {float: right;margin-top: 20px;width: 160px;}
+#account form table tr:nth-last-child(5) td:nth-child(5) select {width:327px !important;cursor:pointer}
+#account form table tr:nth-last-child(4) td:nth-child(2) {width:216px;float:left;overflow:hidden}
+#account form table tr:nth-last-child(4) td:nth-child(2) select {width:235px;cursor:pointer;background: url("/images/misc/contact_form_dropdown.png") repeat scroll -111px 0 #FFFFFF;}
+#account form table tr:nth-last-child(5) td:nth-child(5) {width:327px;float:left;overflow:hidden}
+#account form table tr:nth-last-child(5) td:nth-child(5) select {width:346px !important;cursor:pointer;background: url("/images/misc/contact_form_dropdown.png") repeat scroll 0 0 #FFFFFF;}
+#account form table tr:nth-last-child(7) td:nth-child(5) input {width:103px;}
+#account form table tr:nth-last-child(2) td:nth-child(1), #account form table tr:nth-last-child(1) td:nth-child(1) {width:170px;}
+#account form table tr:nth-last-child(2) td:nth-child(2) {width:550px;}
+
+#bankinfo form table {width:100%;border-collapse:collapse}
+#bankinfo form table tr td:nth-child(1) {width:212px}
+#bankinfo form table tr td input {width:317px}
+#bankinfo form table tr:nth-last-child(10) td:nth-child(2) input {width:103px}
+#bankinfo form table tr i {width: 28px;height:28px;position:relative;float:left;left: 340px;top:-35px;background: url("/images/misc/info.png")}
+#bankinfo form table tr:nth-last-child(4) i {top:-45px}
+#bankinfo form table tr:nth-last-child(2) i span,
+#bankinfo form table tr:nth-last-child(4) i span,
+#bankinfo form table tr:nth-last-child(6) i span,
+#bankinfo form table tr:nth-last-child(12) i span,
+#bankinfo form table tr:nth-last-child(14) i span,
+#bankinfo form table tr:nth-last-child(16) i span,
+#bankinfo form table tr:nth-last-child(18) i span
+{display:none;line-height:14px}
+#bankinfo form table tr:nth-last-child(4) td:nth-child(2),
+#bankinfo form table tr:nth-last-child(6) td:nth-child(2),
+#bankinfo form table tr:nth-last-child(12) td:nth-child(2),
+#bankinfo form table tr:nth-last-child(14) td:nth-child(2),
+#bankinfo form table tr:nth-last-child(16) td:nth-child(2),
+#bankinfo form table tr:nth-last-child(18) td:nth-child(2)
+{height:0;float:left}
+#bankinfo form table tr:nth-last-child(2) i:hover span,
+#bankinfo form table tr:nth-last-child(4) i:hover span,
+#bankinfo form table tr:nth-last-child(6) i:hover span,
+#bankinfo form table tr:nth-last-child(12) i:hover span,
+#bankinfo form table tr:nth-last-child(14) i:hover span,
+#bankinfo form table tr:nth-last-child(16) i:hover span,
+#bankinfo form table tr:nth-last-child(18) i:hover span
+{display:block;position:absolute;left:70px;top:0;width:300px}
+#bankinfo form table tr:nth-last-child(4),
+#bankinfo form table tr:nth-last-child(6),
+#bankinfo form table tr:nth-last-child(12),
+#bankinfo form table tr:nth-last-child(14),
+#bankinfo form table tr:nth-last-child(16)
+{line-height:10px}
+#bankinfo form table tr:nth-last-child(3),
+#bankinfo form table tr:nth-last-child(18)
+{line-height:0px}
+#bankinfo form table tr:nth-last-child(5) td, 
+#bankinfo form table tr:nth-last-child(17) td, 
+#bankinfo form table tr:nth-last-child(19) td 
+{background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);padding:10px 0}
+#bankinfo form table tr:nth-last-child(19) td {padding-bottom:0}
+#bankinfo form table tr:nth-last-child(8) td select,
+#bankinfo form table tr:nth-last-child(9) td input,
+#bankinfo form table tr:nth-last-child(10) td input,
+#bankinfo form table tr:nth-last-child(11) td input
+{margin-bottom: 10px;}
+#bankinfo form table tr:nth-last-child(2) td:nth-child(1) span {padding-top:10px}
+#bankinfo form table tr:nth-last-child(9) td:nth-child(1) span,
+#bankinfo form table tr:nth-last-child(10) td:nth-child(1) span,
+#bankinfo form table tr:nth-last-child(11) td:nth-child(1) span
+{padding-bottom:10px}
+#bankinfo form table tr:nth-last-child(8) td:nth-child(2) {width:327px;float:left;overflow:hidden}
+#bankinfo form table tr:nth-last-child(8) td:nth-child(2) select {width:346px !important;cursor:pointer;background: url("/images/misc/contact_form_dropdown.png") repeat scroll 0 0 #FFFFFF;}
+#bankinfo form table tr:nth-last-child(1) td:nth-child(2) input {margin: 20px 0 0 167px;width: 160px;}
+#bankinfo span.txtError {display: block;line-height: 20px;margin-bottom: 10px;padding: 10px;width: 915px;}
+
+#password form table {width:100%;border-collapse:collapse;display:block;width:935px;overflow:hidden;}
+#password form table tr:nth-last-child(1) td:nth-child(1), 
+#password form table tr:nth-last-child(2) td:nth-child(1), 
+#password form table tr:nth-last-child(2) td:nth-child(3) 
+{width:189px;float:left;}
+#password form table tr td:nth-child(1) span, #password form table tr td:nth-child(3) span {line-height:40px;padding:0 10px 0 0}
+#password form table tr:nth-last-child(3) td:nth-child(1) span {display: block;line-height: 20px;margin-bottom: 10px;padding: 10px;width: 915px;}
+#password form table tr:nth-last-child(2) td:nth-child(1), #password form table tr:nth-last-child(2) td:nth-child(2) {margin-bottom:60px;padding-top:10px}
+#password form table tr:nth-last-child(1) td:nth-child(1), #password form table tr:nth-last-child(1) td:nth-child(2) {margin-bottom:120px;}
+#password form table tr td input {width:317px;margin-bottom:10px;float:left}
+#password form table tr:nth-last-child(1) td input, #password form table tr:nth-last-child(1) td span {margin-top:10px}
+#password form table tr:nth-last-child(2) td:nth-child(4) input {position:relative; top: 60px; left: -516px}
+#password form table tr:nth-last-child(2) td:nth-child(3) span {position:relative; top: -10px; left: -516px} 
+#password form table tr:nth-last-child(1) td:nth-child(4) input {position:relative; top: 70px; left: -843px;margin: 20px 0 0 167px;width: 160px;}
+#password form table tr:nth-last-child(1) td:nth-child(3) span {position:relative; top: 45px; left: -327px}
+#password form table tr:nth-last-child(2) {background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);padding:10px 0}
+
+#newsletter form table {width:100%;border-collapse:collapse}
+#newsletter form table tr td:nth-child(1), 
+#newsletter form table tr td:nth-child(3)
+{width:189px;float:left;line-height:40px}
+#newsletter form table tr td:nth-child(2), 
+#newsletter form table tr td:nth-child(4)
+{float:left;margin-bottom:10px;margin-right:100px;}
+#newsletter form table tr td:nth-child(2) {overflow:hidden;width:327px;}
+#newsletter form table tr td .label {padding:0 10px 0 0}
+#newsletter form table tr td input {width:317px;margin-bottom:10px}
+#newsletter form table tr td select {width:346px !important;cursor:pointer;background: url("/images/misc/contact_form_dropdown.png") repeat scroll 0 0 #FFFFFF;}
+#newsletter form table tr td:nth-child(5) {height:180px;}
+#newsletter form table tr td:nth-child(5) input {position:relative;top:140px;left:-418px;width:170px}
+#newsletter form table tr:nth-last-child(2) td:nth-child(1) span {display: block;line-height: 20px;margin-bottom: 10px;padding: 10px;width: 915px;}
+
+#stats, #reports {padding-left:30px;padding-right:30px;width:875px;min-height:400px;overflow:auto}
+#stats form table, #reports form table {width:100%;border-collapse:collapse}
+#stats .dropDown {width: 100px;}
+#stats span.txtError {display: block;line-height: 20px;margin-bottom: 10px;padding: 10px;width: 915px;}
+
+#reports #PluginReportsSelect {margin-bottom: 10px}
+#reports #PluginReportsSelect table tr td:nth-child(2) {width:327px;float:left;overflow:hidden;}
+#reports #PluginReportsSelect table tr td:nth-child(2) select {width:346px !important;cursor:pointer;background: url("/images/misc/contact_form_dropdown.png") repeat scroll 0 0 #FFFFFF;}
+#reports #PluginReportsYesterday, #reports #PluginReportsLastMonth, #reports #PluginReportsThisMonth {background: none;border: medium none;box-shadow: none;color: #fff;text-decoration: underline;}
+#reports #PluginReports .dropDown, #reports #PluginTransactions .dropDown  {width: 100px;}
+#reports #PluginReports td, #reports #PluginTransactions .searchTable td {margin-bottom:10px;line-height:40px;float:left; margin-right:10px}
+#reports #PluginReports tr:nth-last-child(1) td {margin-left:22px}
+#reports #PluginTransactions td .label {padding-top:0}
+#reports #PluginTransactionsSortExpression.dropDown {width:200px}
+#reports #PluginTransactions .searchTable {margin-bottom: 30px}
+#reports .stdGrid {overflow: auto;width: 875px;display: block;}
+
+
+#affiliates {display:table;margin-bottom:100px;}
+#affiliates h1{font-family: 'Arimo', sans-serif;text-align:center;font-size:24px;height:80px;line-height:80px;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#affiliates .affiliatesContent {padding:50px;float:left;display:table;background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);margin:50px 0;width:835px;}
+#affiliates .affiliatesContent .left {width: 556px; float:left}
+#affiliates .affiliatesContent .left table {width:100%;}
+#affiliates .affiliatesContent .left table td {background: url("/images/framework/transparent-bg-light.png") repeat scroll 0 0 rgba(0, 0, 0, 0);height:100px;}
+#affiliates .affiliatesContent .left table td.firstCell {text-align:center;line-height:100px;font-size:72px;font-weight:700;color:#00484d}
+#affiliates .affiliatesContent .left table td.lastCell {padding:0 30px;font-weight:700;}
+#affiliates .affiliatesContent .right {width: 250px;float:right}
+#affiliates .affiliatesContent .right table {width:100%;border-spacing:0 1px}
+#affiliates .affiliatesContent .right table th {background:#000000;color:#FFFFFF;font-weight:700;height:30px}
+#affiliates .affiliatesContent .right table td {background: url("/images/framework/transparent-bg-light.png") repeat scroll 0 0 rgba(0, 0, 0, 0);height:30px}
+#affiliates .affiliatesContent .right table tr:nth-child(even) td {background: url("/images/framework/transparent-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+#affiliates .affiliatesContent .right table td.firstCell {text-align:right;line-height:30px;font-weight:700;width:70px;padding:0 30px 0 0;}
+#affiliates .affiliatesContent .right table th.firstCell {text-align:left;padding:0 0 0 20px}
+#affiliates .affiliatesContent .right table th.lastCell {text-align:left;}
+#affiliates .affiliatesContent .right table td.lastCell {font-weight:700;}
+#affiliates .affiliatesContent .right table td.firstCell.lastNr {padding:0 21px 0 0;}
+#affiliates .affiliatesContent .right .tnc {margin: 30px 0 0 0}
+#affiliates .imgHead {height:0;}
+#affiliates .imgHead img {position:relative;top:-114px;left:228px;}
+
+#affiliate h2 {padding-left:30px;}
+#affiliate form {margin-bottom: 50px}
+#affiliate tr td:nth-child(1) {padding-left:30px; width: 180px; text-align:right}
+#affiliate .txtBox {width:665px}
+#affiliate .txtBox.small {width:200px}
+#affiliate #PluginAffiliateBanners td:nth-child(2) {width:400px;float:left;overflow:hidden;margin-right:10px}
+#affiliate #PluginAffiliateBannersBanner {width:417px;background: url("/images/misc/contact_form_dropdown.png") no-repeat scroll 73px 0 #FFFFFF;cursor:pointer}
+#affiliate .code {margin:0 30px; background:#FFFFFF;padding:10px;border-radius:5px;border:1px solid #00484d;color:#00484d;width:853px;white-space:pre-wrap}
+#affiliate > a {text-align:center;display:block}
+
+#PluginAccountTransfer {margin: 20px 0 0 0;width: 875px}
+#PluginAccountTransfer span.txtError {width: 855px}
+#PluginAccountTransfer td {padding:0 0 10px 0}
+#PluginAccountTransfer #PluginAccountTransferReceiverUsername {margin-right: 10px}
+
+
+.progressBar {
+    width: 100%;
+}
+
+.progressBarOuter {
+    background: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+.progressBarInner {
+    background: #00c9d8;
+    min-width: 5%;
+}
+
+/* Fit sports in main navigation */
+#navigation-topmenu li a,
+#navigation-submenu li a {
+    padding: 13px 12px
+}
